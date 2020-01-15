@@ -62,7 +62,6 @@ smaller_districts <- sizes %>%
 
 View(smaller_districts)
 
-
 sizes %>%
   filter(`SCHOOL YEAR` == '2018-19') %>%
   arrange(`PK12 TOTAL`)
@@ -86,7 +85,6 @@ sizes %>%
   filter(`DISTRICT NAME` == 'RIPLEY')
 
 # Construct graphs
-
 smaller_districts %>%
   ggplot(aes(x = `SCHOOL YEAR`, y = `PK12 TOTAL`)) +
   geom_point(aes(color = `DISTRICT NAME`)) +
@@ -104,5 +102,3 @@ bigger_districts %>%
   xlab("School Year") +
   ylab("Enrollment (PK-12)") +
   labs(color = "District Name")
-
-New York	4,617	 	2,634,356	 	2,037	45.4	 	1,484	36.8	 	352	6.3	 	744	11.4
